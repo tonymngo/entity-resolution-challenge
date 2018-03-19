@@ -36,17 +36,17 @@ I tuned the model a final time and fit on all training examples. The precision, 
 - recall = 96.94%
 - f1-score = 98.45%
 
-I preprocessed the test set and used this model to predict the matched pairs, then output to matches_test.csv in the current folder. The results of testing are as follow:
-
-- precision = 99.57%
-- recall = 97.08%
-- f1-score = 98.31%
-
 Final parameters of model:
 ```python
 EditedNearestNeighbours(n_neighbors= 5),
 RandomForestClassifier(n_estimators=300,max_depth=5,max_leaf_nodes=24)
 ```
+
+I preprocessed the test set and used this model to predict the matched pairs, then output to matches_test.csv in the current folder. The results of testing are as follow:
+
+- precision = 99.57%
+- recall = 97.08%
+- f1-score = 98.31%
 
 The 3 most important features for my model are:
 
