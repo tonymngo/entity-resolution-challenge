@@ -3,7 +3,7 @@
 Entity resolution, often known in the context of record linkage problem, is the task to find matching entities across different databases. Records are differed due to several reasons, including different identifiers or data collection processes. In this exercise, I will present my approach to resolve the identities of restaurants between Foursquare and Locu databases (both of these companies provide listings of restaurants)
 
 # The Data
-Foursquare and Locu data each contain 1,000 records, most of which have been streamlined to have similar data structures, meaning they each contain name, phone number, street address, postal code, longitude, latitude, region, etc. in JSON format. However, a large portion of the data are missing, and there is no guarantee same restaurants have exact same name or address across databases; in fact, some matching records can have totally different names, address or postal codes.
+Foursquare and Locu data each contain 1,000 records, in which 600 records in each datasets are used for training and the rest are used for testing. Most of the data have been streamlined to have similar data structures, meaning they each contain name, phone number, street address, postal code, longitude, latitude, region, etc. in JSON format. However, a large portion of the data are missing, and there is no guarantee same restaurants have exact same name or address across databases; in fact, some matching records can have totally different names, address or postal codes.
 
 # Approach
 By looking at the data, I noticed the phone number formats are different for locu and foursquare data, hence my first step was to bring these phone numbers to the same format by keeping only digits of the phone number.
