@@ -32,11 +32,15 @@ At this point, the output of model can contain pairs that are not exclusive, mea
 
 I tuned the model a final time and fit on all training examples. The precision, recall, and f1-score of training set are as follow:
 
-- precision = 1.0
-- recall = 0.9694444444444444
-- f1-score = 0.9844851904090269
+- precision = 100%
+- recall = 96.94%
+- f1-score = 98.45%
 
-I preprocessed the test set and used this model to predict the matched pairs, then output to matches_test.csv in the current folder.
+I preprocessed the test set and used this model to predict the matched pairs, then output to matches_test.csv in the current folder. The results of testing are as follow:
+
+- precision = 99.57%
+- recall = 97.08%
+- f1-score = 98.31%
 
 Final parameters of model:
 ```python
